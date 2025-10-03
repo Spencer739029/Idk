@@ -13,6 +13,17 @@
         <label for="surname">Surname:</label>
         <input type="text" name="surname" id="surname">
 
+        <label for="id">Id number:</label>
+        <input 
+            type="text" 
+            name="id" 
+            pattern="\d{4}" 
+            inputmode="numeric" 
+            maxlength="4" 
+            required
+            title="Please enter exactly 4 digits">
+
+
         <button type="submit">Submit</button>
     </form>
 

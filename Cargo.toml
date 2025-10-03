@@ -1,11 +1,12 @@
 [package]
 name = "idk"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
-axum = "0.7"             # For Router, routing, extractors, Redirect
-tokio = { version = "1", features = ["full"] }  # Async runtime
-serde = { version = "1.0", features = ["derive"] }  # For JSON
-serde_json = "1.0"        # For reading/writing submissions.json
-tower-http = { version = "0.4", features = ["fs"] } # For ServeDir
+axum = "0.7"
+tokio = { version = "1", features = ["full"] }
+tower-http = { version = "0.6", features = ["fs"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rand = "0.9.2"
